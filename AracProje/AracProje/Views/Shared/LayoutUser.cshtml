@@ -1,0 +1,1336 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Araç Proje</title>
+    <!-- Favicon-->
+
+
+    <link rel="icon" type="image/x-icon" href="~/startbootstrap-USER TEMA/assets/img/YERTUMmuhendislik.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="~/startbootstrap-USER TEMA/css/styles.css" rel="stylesheet" />
+
+    <script src="~/startbootstrap-USER TEMA/js/scripts.js"></script>
+
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"><img src="~/startbootstrap-USER TEMA/assets/img/YERTUMmuhendislik.png" /></a>
+            @*<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>*@
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/Anasayfa/Index">Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Hizmetlerimiz</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" 
+                           aria-expanded="false">Araç Proje</a>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/AITMYönetmeligi/Index">AİTM Yönetmeliği</a>
+                            <a class="dropdown-item" href="/AKMmerkezleri/Index">AKM Merkezleri</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#!"></a>
+                        </div>
+                    </li>
+                    @*<li class="nav-item"><a class="nav-link" href="/AracProje/Index">Araç Proje</a></li>*@
+                    <li class="nav-item"><a class="nav-link" href="/Linkler/Index">Linkler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Kurumsal/Index">Kurumsal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Iletisim/Index">İletişim</a></li>
+                </ul>
+
+                
+
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-subheading">Karayolu Uygunluk Projesi</div>
+            <div class="masthead-heading text-uppercase">Furkan YERTÜM</div>
+            <a class="btn btn-primary btn-xl text-uppercase" href="#services">05309309901</a>
+        </div>
+    </header>
+
+
+   
+
+    @*-------------------------------------------------------------------------------------------------------------------------------------------------*@
+
+
+
+    <div class="main">
+        @RenderBody()
+    </div>
+
+
+    <!-- HİZMETLERİMİZ-->
+    <section class="page-section bg-white" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">HİZMETLERİMİZ</h2>
+                <h3 class="section-subheading text-muted">
+                    TSE Onaylı Hızlı ve Güvenilir Ekibi ile Araç Üzeri Tüm Tadilat Projeleri <br /><br />
+                    İletişim: 0530 930 99 01
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 1-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img src="~/startbootstrap-USER TEMA/assets/img/portfolio/KasaTadilatProjesi.jpg" />
+
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Kasa Tadilat Projesi</div>
+                            <div class="portfolio-caption-subheading text-muted">test</div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 2-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img src="~/startbootstrap-USER TEMA/assets/img/portfolio/LPGSokum.jpg" />
+
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">LGP Söküm Projesi</div>
+                            <div class="portfolio-caption-subheading text-muted">test</div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 3-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img src="~/startbootstrap-USER TEMA/assets/img/portfolio/KoltukSökmeProjesi.jpg" />
+
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Koltuk Söküm</div>
+                            <div class="portfolio-caption-subheading text-muted">test</div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Portfolio item 4-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img src="~/startbootstrap-USER TEMA/assets/img/portfolio/AcıkSacKasa.jpg" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Açık Sac Kasa</div>
+                            <div class="portfolio-caption-subheading text-muted"></div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <!-- Portfolio item 5-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img src="~/startbootstrap-USER TEMA/assets/img/portfolio/MotorDegisikligi.jpg" />
+
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Motor Değişikliği</div>
+                            <div class="portfolio-caption-subheading text-muted"></div>
+                        </div>
+                    </div>
+                    <br />
+
+                    <br />
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <!-- Portfolio item 6-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img src="~/startbootstrap-USER TEMA/assets/img/portfolio/KapalıKasa.jpg" />
+
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Kapalı Kasa</div>
+                            <div class="portfolio-caption-subheading text-muted"></div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <!-- Portfolio item 7-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img src="~/startbootstrap-USER TEMA/assets/img/portfolio/ÇekiDemirii.jpg" />
+
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Çeki Demiri</div>
+                            <div class="portfolio-caption-subheading text-muted"></div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <!-- Portfolio item 8-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal8">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img src="~/startbootstrap-USER TEMA/assets/img/portfolio/EngelliAracı.jpg" />
+
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Engelli Aracı</div>
+                            <div class="portfolio-caption-subheading text-muted"></div>
+                        </div>
+                    </div>
+
+                    <br />
+                    <br />
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <!-- Portfolio item 9-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal9">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img src="~/startbootstrap-USER TEMA/assets/img/portfolio/TenteBarandaMontajı.jpg" />
+
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Tente / Branda Montajı</div>
+                            <div class="portfolio-caption-subheading text-muted"></div>
+                        </div>
+                    </div>
+
+                    <br />
+                    <br />
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Portfolio item 10-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal10">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img src="~/startbootstrap-USER TEMA/assets/img/portfolio/KaravanProje.jpg" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Motorlu Karavanlar</div>
+                            <div class="portfolio-caption-subheading text-muted"></div>
+                        </div>
+                    </div>
+
+                    <br />
+                    <br />
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <!-- Portfolio item 11-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal11">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img src="~/startbootstrap-USER TEMA/assets/img/portfolio/YukAsansorluArac.jpg" />
+
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Yük Asansörlü Araçlar</div>
+                            <div class="portfolio-caption-subheading text-muted"></div>
+                        </div>
+                    </div>
+                    <br />
+
+                    <br />
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <!-- Portfolio item 12-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal12">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img src="~/startbootstrap-USER TEMA/assets/img/portfolio/HidrolikVincliArac.jpg" />
+
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Hidrolik Vinçli Araçlar</div>
+                            <div class="portfolio-caption-subheading text-muted"></div>
+                        </div>
+                    </div>
+
+                    <br />
+                    <br />
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Portfolio item 10-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal13">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img src="~/startbootstrap-USER TEMA/assets/img/portfolio/OkulTasiti.jpg" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Okul Taşıtı</div>
+                            <div class="portfolio-caption-subheading text-muted"></div>
+                        </div>
+                    </div>
+                    <br />
+
+                    <br />
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <!-- Portfolio item 11-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal14">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img src="~/startbootstrap-USER TEMA/assets/img/portfolio/KarayoluUygunlukBelgesi.jpg" />
+
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Karayolu Uygunluk Belgesi</div>
+                            <div class="portfolio-caption-subheading text-muted"></div>
+                        </div>
+                    </div>
+                    <br />
+
+                    <br />
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <!-- Portfolio item 12-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal15">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img src="~/startbootstrap-USER TEMA/assets/img/portfolio/Ambulans.jpg" />
+
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Ambulanslar / Cankurtaranlar</div>
+                            <div class="portfolio-caption-subheading text-muted"></div>
+                        </div>
+                    </div>
+
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Team-->
+    <section class="page-section bg-light" id="team">
+        <div class="container">
+            <div class="text-center">
+                @*<h2 class="section-heading text-uppercase">EKİBİMİZ</h2>*@
+                @*<h3 class="section-subheading text-muted">Profesyonel destek için doğru adrestesiniz</h3>*@
+            </div>
+            <div class="text-center>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        @*<img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />*@
+                        <h3>Furkan YERTÜM</h3>
+                        <p class="text-muted">Otomotiv & Makine Mühendisi</p>
+                        <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/furkanyertum?t=EzrtnsHIJCz0sImKzJ9_3g&s=09" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/frknyrtm" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/furkan-yert%C3%BCm-21a055134/" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center"><p class="large text-muted"><h5>Profesyonel destek için doğru adrestesiniz</h5><br />Mühendislik alanında yardıma ihtiyacınız olduğunuzda 7/24 destek için buradayız.</p></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Clients-->
+    @*<div class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+
+
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">BİZE ULAŞIN</h2>
+                <h3 class="section-subheading text-muted">Tüm sorularınızın cevabı için..</h3>
+            </div>
+
+            <!-- https://startbootstrap.com/solution/contact-forms-->
+
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="text-center">
+                    <a href="/Iletisim/Index" class="btn btn-primary btn-xl text-uppercase">İLETİŞİM</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <!-- BİZE ULAŞIN-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start"> Tüm Hakları Saklıdır. &copy; bktyrtm  </div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/furkanyertum?t=EzrtnsHIJCz0sImKzJ9_3g&s=09" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/frknyrtm" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/furkan-yert%C3%BCm-21a055134/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    @*<a class="link-dark text-decoration-none me-3" href="https://mail.google.com/mail/">furkanyertum@gmail.com</a>*@
+                    <a class="btn btn-outline-warning" card mx-3" href="https://mail.google.com/mail/" aria-label="Mail">furkanyertum@mail.com<i class="figure-img"></i></a>
+                    @*<a class="link-dark text-decoration-none" href="#!"></a>*@
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Portfolio Modals-->
+    <!-- Portfolio item 1 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="~/startbootstrap-USER TEMA/assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Kasa Tadilat</h2>
+                                <p class="item-intro text-muted">Aracınızın üst yapısında yaptığınız değişikliklerde (Tente, Açık Kasa,Kapalı Kasa, Frigorifik Kasa, Ahşap Kasa vb.) projelerinizi TSE onaylı hazırlıyoruz.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                <p>
+                                    Aracınızın üst yapısındaki değişikliklerde ruhsat değişikliği için proje yapılması gerekmektedir. Açık kasanız üzerine tente
+                                    konulduğunda yada söküldüğünde, Üzerindeki kasayı indirip farklı özellikte bir kasa değiştirerek proje aşamasına geçilir.
+                                <p>
+                                    Aracın ölçüleri alınarak projesi hazırlanır ve TSE Araç kontrol merkezlerinden randevu alınarak araç yönlendirilir.
+                                    Uzman aracı inceleyip onay veridikten sonra onay süreci başlar. Onaylanan dosya e-imzalı olarak müşteriye teslim edilir.
+                                </p>
+                                <p>
+                                    TÜVTÜRK randevusuna proje ile gidilerek araç incelenir ve TÜV onayından sonra en yakın noterden ruhsatınızı değiştirebilirsiniz.
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Tel:</strong>
+                                        05309309901
+                                    </li>
+                                    <li>
+                                        <strong>Mail:</strong>
+                                        furkanyertum@mail.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Kapat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 2 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="~/startbootstrap-USER TEMA/assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">LPG Söküm</h2>
+                                <p class="item-intro text-muted">Araçtan LPG Yakıt Ekipmanları ve LPG Yakıt tankı sökülerek araç ruhsattından LPG yakıt cinsinin düşürülmesi için yapılan projedir.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                <p>
+                                    Araçtan LPG Ekipmanları ve LPG Yakıt tankı yetkili bir firmada sökülerek işlemin ilk aşaması başlar.<br />
+                                    Aracın projesi hazırlandıktan sonra araç kontrol merkezinde LPG söküldüğüne dair araç incelemesi uzman tarafından yapılır.<br />
+                                    Uzman onay verdikten sonra onay aşaması sürmektedir. Projeniz onaylandıktan sonra
+                                    size e-imzalı projeniz verilir ve TÜVTÜRK randevusu alarak muayene işlemini gerçekleştirilir. <br />Muayene sonrası en yakın notere
+                                    giderek yeni ruhsatınızı alabilirsiniz.
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Tel:</strong>
+                                        05309309901
+                                    </li>
+                                    <li>
+                                        <strong>Mail:</strong>
+                                        furkanyertum@mail.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Kapat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 3 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal">
+                    <img src="~/startbootstrap-USER TEMA/assets/img/close-icon.svg" />
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Koltuk Söküm</h2>
+                                <p class="item-intro text-muted">Otobüs, Minibüs, Kamyonet sınıfı araçlardan hızlı ve güvenilir ekibimiz tarafından koltuk sökümü projesi ile koltuk sayısı düşürülmektedir.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                <p>
+                                    Genelde koltuk söküm işlemleri, Ehliyet sınıfı yetersizliğinden yada  aracın vergi diliminden dolayı yapılmaktadır. Sürücü dahil
+                                    18-23 kişi arasında otobüs sınıfındaki araçlardan koltuk sayıları sürücü dahil 17 kişi altına düşürülerek minibüse tadil edilebilir.
+                                </p>
+                                <p>  Otobüs ve Minibüs gibi araçlarda koltuk sökümü ile kamyon-kamyonet sınıfına geçiş sağlanabilir.</br>
+                                <p>
+                                    Burada dikkat etmek gereken husus kamyonete çevrilmek istenen aracın azami yüklü ağırlığının 3500kg dan fazla olmadığına emin
+                                    olmanız gerekmektedir. 3501kg ve üzeri azami yüklü ağırlığı bulunan araçlar kamyon sınıfına girmektedir. Kamyon sınıfındaki araçta
+                                    takograf istenmektedir. Tabiki bulunduğunuz ilin dışına çıkmayacaksanız bulunduğunuz ilin belediye sınırları dışına çıkmayacağınızı
+                                    taahüt ederek takograftan kurtulabilirsiniz.
+
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Tel:</strong>
+                                        05309309901
+                                    </li>
+                                    <li>
+                                        <strong>Mail:</strong>
+                                        furkanyertum@mail.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Kapat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 4 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="~/startbootstrap-USER TEMA/assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Açık Sac Kasa</h2>
+                                <p class="item-intro text-muted">hakkında bilgi</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                <p>
+                                    Türkiye de tescil görecek tam ve tamamlanmış araçların üst yapı Tadilatları A.İ.T.M. yönetmeliğinin
+                                    ilgili maddelerine uygun olarak yapılmalıdır. Proje onayından sonra mevzuata uygun olarak yetkili
+                                    kurumlarda tescil işlemi yaptırılmalıdır.
+                                <p>
+                                    <h6> İlgili yönetmeliğe web sitemizin linkler bölümünden ulaşabilirsiniz.</h6>
+                                </p>
+
+                                <p>
+                                    Açık Sac Kasa tadilatı yapılmadan önce tadilatçı firma ile A.İ.T.M. yetkili teknik sorumlu makine
+                                    mühendisimiz ölçü, ağırlık ve diğer ekipmanlar konusunda yapılması gerekenleri görüşmelidir. Tadilatı
+                                    yapılan araç, Türkiye’nin herhangi bir yerindeki TSE Araç Kontrol Merkezi (AKM) tarafından incelenir
+                                    ve yetkili makine mühendisi tarafından hazırlanan projesi TSE Araç Proje Müdürlüğü tarafından onaylanır.
+                                    Aracın (TUV) istasyonlarından muayenesi yapıldıktan sonra yetkili tescil kuruluşu (Noter) tarafından
+                                    tescil işlemleri yapılır.
+                                </p>
+
+                                <p>  Daha detaylı bilgilendirme için bizi arayınız.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Tel:</strong>
+                                        05309309901
+                                    </li>
+                                    <li>
+                                        <strong>Mail:</strong>
+                                        furkanyertum@gmail.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Kapat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 5 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="~/startbootstrap-USER TEMA/assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Motor Değişikliği</h2>
+                                <p class="item-intro text-muted">Montaj uygunluk raporu düzenlenmiş dosyanız, Araç tescil belgeniz ve aracınız ile araç kontrol merkezine giderek onaylanmasıyla son bulur.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
+                                <p>
+                                    <h6>Motor Değişimi Montaj Uygunluk Raporu Onayı ve İncelemesi</h6>
+
+                                <p>
+                                    Başvurusu Yapılan Montaj uygunluk raporu düzenlenmiş dosyanız, Araç tescil belgeniz ve aracınız ile
+                                    araç kontrol merkezine randevu alarak gelmeniz gerekmektedir. Aracınızın fiziki incelemesi ve dosya
+                                    incelemesi araç kontrol merkezi uzmanı tarafından onay aldıktan sonra dosya işleminiz hazır durumdadır.
+                                    Ruhsat ve muayene işlemleri için alt bilgiyi okuyabilirsiniz.
+                                </p>
+
+                                <p><h6>  Motor Değişimlerinde Araç Muayenesi Şartı Var mı?</h6></p>
+                                <p>
+                                    Araç motor değişimi montaj uygunluk raporlarında takılan motor numaralı ve aracın mevcut araç muayenesi
+                                    varsa araç muayenesine gerek yoktur. Fakat araca takılan motor numarasız ise, Noter tarafından verilen
+                                    yeni motor numarasının araca çakılması gerekmektedir. motor numarası çakıldıktan sonra aracın araç
+                                    muayene istasyonuna randevu alarak araç muayenesi yapıldıktan sonra noterden ruhsat değişimi yapılabilir.
+                                </p>
+
+                                <p>
+                                    Araç motor değişim tadilat projelerinde ise araca takılan motor numaralı veya numarasız motor oluşuna
+                                    bakılmaksızın aracın mevcut muayenesi varsa, araç yine tüvtürk araç muayenesine giderek araç motor
+                                    değişimi için araç tadilat muayenesine girmesi zorunludur.
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Tel:</strong>
+                                        05309309901
+                                    </li>
+                                    <li>
+                                        <strong>Mail:</strong>
+                                        furkanyertum@mail.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Kapat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 6 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="~/startbootstrap-USER TEMA/assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Kapalı Kasa</h2>
+                                <p class="item-intro text-muted">Hakkında bilgi..</p>
+                                <img class="img-fluid d-block mx-auto" src="~/startbootstrap-USER TEMA/assets/img/portfolio/6.jpg" />
+
+                                <p>
+                                    Türkiye de tescil görecek tam ve tamamlanmış araçların üst yapı Tadilatları A.İ.T.M. yönetmeliğinin ilgili
+                                    maddelerine uygun olarak yapılmalıdır. Proje onayından sonra mevzuata uygun olarak yetkili kurumlarda tescil
+                                    işlemi yaptırılmalıdır. İlgili yönetmeliğe web sitemizin linkler bölümünden ulaşabilirsiniz.
+                                </p>
+
+                                <p>
+                                    Kapalı Kasa tadilatı yapılmadan önce tadilatçı firma ile A.İ.T.M. yetkili teknik sorumlu makine mühendisimiz
+                                    ölçü, ağırlık ve diğer ekipmanlar konusunda yapılması gerekenleri görüşmelidir. Tadilatı yapılan araç,
+                                    Türkiye’nin herhangi bir yerindeki TSE Araç Kontrol Merkezi (AKM) tarafından incelenir ve yetkili makine
+                                    mühendisi tarafından hazırlanan projesi TSE Araç Proje Müdürlüğü tarafından onaylanır.
+                                </p><p>
+                                    Aracın (TUV)
+                                    istasyonlarından muayenesi yapıldıktan sonra yetkili tescil kuruluşu (Noter) tarafından tescil işlemleri yapılır.
+                                </p>
+
+                                <p> Daha detaylı bilgilendirme için bizi arayınız.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Tel:</strong>
+                                        05309309901
+                                    </li>
+                                    <li>
+                                        <strong>Mail:</strong>
+                                        furkanyertum@mail.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Kapat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 7 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="~/startbootstrap-USER TEMA/assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Çeki Demiri</h2>
+                                <p class="item-intro text-muted">Hazırlanan Montaj Uygunluk Raporu Araç Kontrol Merkezi Uzmanı tarafından araç ve dosya incelemesi yapılarak teslim edilmektedir.</p>
+                                <img class="img-fluid d-block mx-auto" src="~/startbootstrap-USER TEMA/assets/img/portfolio/6.jpg" />
+
+                                <p>
+                                    Çeki kancaları aracınızda herhangi bir delme,kesme işlemi yapılmadan aracınıza ait şase bağlantılı olarak
+                                    orijinal ürünler kullanmaktayız. Vermiş olduğumuz hizmette Çeki Demiri Montajı, Elektrik Bağlantısı ve
+                                    Projesi şeklinde teslimat edilmektedir.
+                                </p>
+
+                                <p>
+                                    Aracınıza verilen randevu günü Çeki Demiri Montajı ve Elektrik Bağlantısı Montajı yapılırken projesi (Montaj
+                                    Uygunluk Raporu) da hazırlanıp TSE Araç Kontrol Merkezi Uzmanı tarafından araç incelemesi ve dosya incelemesi
+                                    yapılarak teslim edilmektedir. Verilen proje (Montaj Uygunluk Raporu) ile en yakın notere giderek yeni
+                                    ruhsatınızı (Çeki Demirli) alabilirsiniz.
+                                </p>
+
+                                <p>
+                                    Fiyat konusu için gelen ürünler ithal ve her araca özel üretim olduğundan bizlere ulaşarak fiyat alabilirsiniz.
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Tel:</strong>
+                                        05309309901
+                                    </li>
+                                    <li>
+                                        <strong>Mail:</strong>
+                                        furkanyertum@mail.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Kapat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 8 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="~/startbootstrap-USER TEMA/assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Engelli Aracı</h2>
+                                <p class="item-intro text-muted">hakkında bilgi</p>
+                                <img class="img-fluid d-block mx-auto" src="~/startbootstrap-USER TEMA/assets/img/portfolio/6.jpg" />
+
+                                <p>
+                                    Engellilik durumu sağlık kuruluşları tarafından verilen rapor ile tespit edilen engellilerin kullanımı
+                                    amacıyla ve engellilik durumuna göre M, N, L ve T kategori araçlara tadilat yapılabilir.
+                                </p>
+
+                                <p>
+                                    Sürücünün engelini belirten bir sağlık raporu (01.01.2016’dan sonra alınan sağlık raporlarında uyarma
+                                    kodları belirtilmelidir),
+                                    H sınıfı veya uyarlama kodlu sürücü belgesi,
+                                    Araç tescil belgesi (ruhsat veya araç sıfırsa fatura ve uygunluk belgesi) gereklidir.
+
+                                    Sağlık raporunda belirtilen engel durumuna göre veya uyarlama kodlarına göre özel tertibat montajı yapılır.
+                                </p>
+
+                                Uyarlama kod listesi:
+                                <p> <a href="https://www.aracprojemerkezi.com/uploads/engelli-kodlari.pdf">Engelli Kodları</a></p>
+
+                                <p>
+                                    Tertibat montajı yapılan aracın montaj uygunluk raporu hazırlanır. Hazırlanan montaj uygunluk raporu
+                                    tadilatı yapan firmanın kaşe ve imzasından sonra Türkiye’nin herhangi bir yerindeki TSE Araç Kontrol
+                                    Merkezi (AKM) tarafından araç ile birlikte incelenir ve TSE Araç Proje Müdürlüğü tarafından onaylanır.
+                                    Yetkili tescil kuruluşu (Noter) tarafından tescil işlemleri yapılır. (Aracın geçerli muayenesi varsa tescil
+                                    işleminden önce (TUV) muayenesine gerek yoktur.)
+                                </p>
+
+                                <p> Soru: Özel tertibatlı engelli aracımı başkası da kullanabilir mi? Cevap: Evet kullanabilir.</p>
+                                <p>
+                                    Daha detaylı bilgilendirme için bizi arayınız.
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Tel:</strong>
+                                        05309309901
+                                    </li>
+                                    <li>
+                                        <strong>Mail:</strong>
+                                        furkanyertum@mail.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Kapat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 9 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="~/startbootstrap-USER TEMA/assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Tente / Branda Montajı</h2>
+                                <p class="item-intro text-muted">hakkında bilgi</p>
+                                <img class="img-fluid d-block mx-auto" src="~/startbootstrap-USER TEMA/assets/img/portfolio/6.jpg" />
+
+                                <p>
+                                    Türkiye de tescil görecek tam ve tamamlanmış araçların üst yapı Tadilatları A.İ.T.M. yönetmeliğinin ilgili maddelerine uygun
+                                    olarak yapılmalıdır. Proje onayından sonra mevzuata uygun olarak yetkili kurumlarda tescil işlemi yaptırılmalıdır. İlgili
+                                    yönetmeliğe web sitemizin linkler bölümünden ulaşabilirsiniz.
+                                </p>
+
+                                <p>
+                                    Tente / Branda Montajı tadilatı yapılmadan önce tadilatçı firma ile A.İ.T.M. yetkili teknik sorumlu makine mühendisimiz ölçü,
+                                    ağırlık ve diğer ekipmanlar konusunda yapılması gerekenleri görüşmelidir. Tadilatı yapılan araç, Türkiye’nin herhangi bir
+                                    yerindeki TSE Araç Kontrol Merkezi (AKM) tarafından incelenir ve yetkili makine mühendisi tarafından hazırlanan projesi
+                                    TSE Araç Proje Müdürlüğü tarafından onaylanır. Aracın (TUV) istasyonlarından muayenesi yapıldıktan sonra yetkili tescil
+                                    kuruluşu (Noter) tarafından tescil işlemleri yapılır.
+                                </p>
+
+
+
+                                <p> Daha detaylı bilgilendirme için bizi arayınız.</p>
+
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Tel:</strong>
+                                        05309309901
+                                    </li>
+                                    <li>
+                                        <strong>Mail:</strong>
+                                        furkanyertum@mail.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Kapat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 10 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="~/startbootstrap-USER TEMA/assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Motorlu Karavanlar</h2>
+                                <p class="item-intro text-muted">Kapalı bir yaşam alanı içinde yatak,masa, dinlenme, depolama ve pişirme alanlarının olması aracınızın bir karavana dönüşmesi için yeterlidir.</p>
+                                <img class="img-fluid d-block mx-auto" src="~/startbootstrap-USER TEMA/assets/img/portfolio/6.jpg" />
+
+                                <p>
+                                    <h6> MOTOKARAVAN DÖNÜŞÜMÜ NASIL YAPILIR? NELER GEREKLİ ? TESCİL İÇİN NASIL BİR YOL İZLENMELİ?</h6>
+                                </p>
+
+                                <p>
+                                    Aracınızın motokaravana dönüşümü için yaşam alanı olarak içerisini dizayn etmek ilk detayınız olmalıdır.
+
+                                    Kapalı bir yaşam alanı içinde yatak,masa, dinlenme, depolama ve pişirme alanlarının olması aracınızın bir karavana dönüşmesi
+                                    için yeterlidir.
+
+                                    Araç içerisinde sonradan eklenen elektrikli aletler (Elektriği araçtan almıyor ise) bu aksamın CE işaretli, yani makine
+                                    emniyeti yönetmeliğinden sertifikalı olması gereklidir.
+
+                                    Eğer elektriği araçtan alıyor ise bu aksamların elektro manyetik uyumluluklarıni gösteren Reg 10 seviyesinden sertifikalı
+                                    olması gerekir.
+                                </p>
+
+                                <p>
+                                    Motokaravanınız hazır ise bizlere ulaşarak hazırlayacağımız proje ile her ilde bulunan Araç Kontrol Merkezlerinin sizlere
+                                    en yakın olanına yönlendirme yapıyoruz. Araç kontrol merkezinde incelendikten sonra onay süreci başlamakta ve onay ardından
+                                    e-imzalı belgenizi size teslim ediyoruz. Bu belge ile TÜV'den muayenesi yapıldıktan sonra en yakın notere giderek ruhsatınızı
+                                    motokaravan olarak alabilirsiniz.
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Tel:</strong>
+                                        05309309901
+                                    </li>
+                                    <li>
+                                        <strong>Mail:</strong>
+                                        furkanyertum@mail.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Kapat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 11 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="~/startbootstrap-USER TEMA/assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Yük Asansörlü Araçlar</h2>
+                                <p class="item-intro text-muted">hakkında bilgi</p>
+                                <img class="img-fluid d-block mx-auto" src="~/startbootstrap-USER TEMA/assets/img/portfolio/6.jpg" />
+
+                                <p>
+                                    Türkiye de tescil görecek tam ve tamamlanmış araçların üst yapı Tadilatları AİTM yönetmeliğinin ilgili maddelerine uygun
+                                    olarak yapılmalıdır. Proje onayından sonra mevzuata uygun olarak yetkili kurumlarda tescil işlemi yaptırılmalıdır.
+                                </p><p>
+
+                                    Hidrolik sistemli üst yapı tadilatlarında 2006/42/AT Makine Emniyeti Yönetmeliğine uygun olarak TSE’den CE uygunluk
+                                    beyanı alınır. Tadilat A.İ.T.M yönetmeliğine uygun olarak yapılır. Firmamız tüm hidrolik sistemli üst yapılara CE uygunluk
+                                    beyanı almada uzman ve teknik bilgiye sahiptir.
+                                </p><p>
+
+
+
+                                    Üst yapı tadilatı yapılmadan önce tadilatçı firma ile A.İ.T.M. yetkili teknik sorumlu makine mühendisimiz ölçü, ağırlık ve
+                                    diğer ekipmanlar konusunda yapılması gerekenleri görüşmelidir.
+                                </p><p>
+                                    Tadilatı yapılan araç, Türkiye’nin herhangi bir yerindeki
+                                    TSE Araç Kontrol Merkezi (AKM) tarafından incelenir ve yetkili makine mühendisi tarafından hazırlanan projesi TSE Araç Proje
+                                    Müdürlüğü tarafından onaylanır. Aracın (TUV) istasyonlarından muayenesi yapıldıktan sonra yetkili tescil kuruluşu (Noter)
+                                    tarafından tescil işlemleri yapılır.
+                                </p><p>
+
+
+
+                                    Daha detaylı bilgilendirme için bizi arayınız.
+
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Tel:</strong>
+                                        05309309901
+                                    </li>
+                                    <li>
+                                        <strong>Mail:</strong>
+                                        furkanyertum@mail.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Kapat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 12 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="~/startbootstrap-USER TEMA/assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Hidrolik Vinçli Araçlar</h2>
+                                <p class="item-intro text-muted">hakkında bilgi</p>
+                                <img class="img-fluid d-block mx-auto" src="~/startbootstrap-USER TEMA/assets/img/portfolio/6.jpg" />
+
+                                <p>
+                                    Türkiye de tescil görecek tam ve tamamlanmış araçların üst yapı Tadilatları AİTM yönetmeliğinin ilgili maddelerine uygun
+                                    olarak yapılmalıdır. Proje onayından sonra mevzuata uygun olarak yetkili kurumlarda tescil işlemi yaptırılmalıdır.
+                                </p><p>
+
+                                    Hidrolik sistemli üst yapı tadilatlarında 2006/42/AT Makine Emniyeti Yönetmeliğine uygun olarak TSE’den CE uygunluk beyanı
+                                    alınır. Tadilat A.İ.T.M yönetmeliğine uygun olarak yapılır. Firmamız tüm hidrolik sistemli üst yapılara CE uygunluk beyanı
+                                    almada uzman ve teknik bilgiye sahiptir.
+                                </p><p>
+
+
+
+                                    Üst yapı tadilatı yapılmadan önce tadilatçı firma ile A.İ.T.M. yetkili teknik sorumlu makine mühendisimiz ölçü, ağırlık ve
+                                    diğer ekipmanlar konusunda yapılması gerekenleri görüşmelidir. Tadilatı yapılan araç, Türkiye’nin herhangi bir yerindeki TSE
+                                    Araç Kontrol Merkezi (AKM) tarafından incelenir ve yetkili makine mühendisi tarafından hazırlanan projesi TSE Araç Proje
+                                    Müdürlüğü tarafından onaylanır. Aracın (TUV) istasyonlarından muayenesi yapıldıktan sonra yetkili tescil kuruluşu (Noter)
+                                    tarafından tescil işlemleri yapılır.
+                                </p><p>
+
+
+
+                                    Daha detaylı bilgilendirme için bizi arayınız.
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Tel:</strong>
+                                        05309309901
+                                    </li>
+                                    <li>
+                                        <strong>Mail:</strong>
+                                        furkanyertum@mail.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Kapat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 13 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="~/startbootstrap-USER TEMA/assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Okul Taşıtı</h2>
+                                <p class="item-intro text-muted">Otobüs, Minibüs, sınıfı araçlardan hızlı ve güvenilir ekibimiz tarafından okul iptal projesi ile normale dönüştürülmektedir.</p>
+                                <img class="img-fluid d-block mx-auto" src="~/startbootstrap-USER TEMA/assets/img/portfolio/6.jpg" />
+
+                                <p>
+                                    Okul paketi iptal projesi için öncelikle aracınızın ruhsatında yer alan yürür vaziyetteki kütle ve azami
+                                    yüklü ağırlık arasındaki fark ile yolcu sayısının kurtarıp kurtarmadığı hesaplanmaktadır. Bizleri arayıp
+                                    bilgi alabilirsiniz.
+                                </p>
+
+                                <p>
+                                    Okul paketinde yolcu ağırlığı 50 kg olarak hesaplanmaktadır. Normal yolcu nakli olduğunda 71kg olarak
+                                    hesaplanmaktadır. Bazı araçlar bu oranı kurtarmadığı için koltukta sökülmesi gerekmekte. Uygunluğu
+                                    kontrol edildikten sonra aracınızda bulunan okul taşıtı yazısı ve dur levhasını sökmeniz yeterli
+                                    olacaktır.
+                                </p><p>
+                                    Hazırlanan proje ile size verilen başvuru numarası ile araç kontrol merkezine giderek
+                                    inceleme uzmanı kontrolünden sonra en geç 3 iş günü içerisinde elektronik imzalı olarak projeniz onay
+                                    görmektedir.
+                                </p>
+
+                                <p>Fiyat, doğru projelendirme ve hız konusunda bizimle çalışabilirsiniz.</p>
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Tel:</strong>
+                                        05309309901
+                                    </li>
+                                    <li>
+                                        <strong>Mail:</strong>
+                                        furkanyertum@mail.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Kapat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 14 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="~/startbootstrap-USER TEMA/assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Karayolu Uygunluk Belgesi</h2>
+                                <p class="item-intro text-muted">Gümrükten ihale ile alınan, yurt dışından getirilen vb. diğer Türk plakası almak isteyen araçlarla ilgili Karayolu Uygunluk Belgesi düzenlenmektedir.</p>
+                                <img class="img-fluid d-block mx-auto" src="~/startbootstrap-USER TEMA/assets/img/portfolio/6.jpg" />
+
+                                <p><h6>  KARAYOLU  UYGUNLUK  BELGESİ NEREDEN ALINIR? SÜREÇLERİ NELERDİR?</h6></p>
+
+
+                                <p>
+                                    TASİŞ,MKA veya yurt dışından, gümrükten yada ilahe ile alınan araçların trafik tescil işlemlerinin
+                                    tamamlanması için gerekli olan karayolu uygunluk belgesi  MARTOY yetki belgeli Makine Mühendisi tarafından
+                                    düzenlenebilir. Düzenlendikten sonra araç incelenmesi için Araç Kontrol Merkezine gider ve TSE
+                                    yetkililerince kontrolden geçtikten sonra belge onay işlemi için süreç başlar. Onaylanan dosya E-İmzalı
+                                    olarak Sistemden indirilir ve Araç sahibine teslim edilir. Araç sahibi verilen belge ile muayene istasyonuna
+                                    giderek, sonrasında noterden plaka ve ruhsat işlemlerini gerçekleştirir.
+                                </p>
+
+                                <h6>İŞLEMLER İÇİN GEREKLİ OLAN EVRAKLAR:</h6>
+
+                                1- Şahadetname<br />
+                                2- Fatura<br />
+                                <br />
+                                <p>
+                                    Bunlar ile birlikte araç üzerinde bulunan fabrika tanıtım etiketi fotoğrafı
+                                    (Şase no ve ağırlıkların bulunduğu etiket) ve aracın iç ve dış resimleri gerekmektedir.
+                                </p>
+
+                                <p>
+                                    İlgili Belge için bizimle irtibata geçebilirsiniz.
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Tel:</strong>
+                                        05309309901
+                                    </li>
+                                    <li>
+                                        <strong>Mail:</strong>
+                                        furkanyertum@mail.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Kapat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 15 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="~/startbootstrap-USER TEMA/assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Ambulanslar / Cankurtaranlar</h2>
+                                <p class="item-intro text-muted">hakkında bilgi.</p>
+                                <img class="img-fluid d-block mx-auto" src="~/startbootstrap-USER TEMA/assets/img/portfolio/6.jpg" />
+
+                                <p>
+                                    M.A.R.T.O.Y. Yönetmeliği ve TS EN 1789:2007 standardının teknik şartlarına göre zorunlu tıbbi araçlar
+                                    ile teçhizatı içeren araçlar olup TS EN 1789 belgesiyle yetkilendirilmiş firmalar tarafından imalatı
+                                    yapılabilir.
+                                </p>
+
+                                <p>
+                                    Onaylandıktan sonra araç TSE’DE ilgili yönetmeliğe göre incelenir. Ek C verilir. Muayene (TUV) tescil
+                                    işlemlerinden sonra İl Sağlık Müdürlüğünden Ambulans Belgesi alınır.
+                                </p>
+
+
+
+                                <p>
+                                    Daha detaylı bilgilendirme için bizi arayınız.
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Tel:</strong>
+                                        05309309901
+                                    </li>
+                                    <li>
+                                        <strong>Mail:</strong>
+                                        furkanyertum@mail.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Kapat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="~/startbootstrap-USER TEMA/js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+</body>
+</html>

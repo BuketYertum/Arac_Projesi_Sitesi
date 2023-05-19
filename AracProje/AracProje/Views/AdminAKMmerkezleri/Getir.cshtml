@@ -1,0 +1,43 @@
+﻿
+
+@model AracProje.Models.Entity.TBL_AKMMERKEZLERI
+
+@{
+    ViewBag.Title = "Getir";
+    Layout = "~/Views/Shared/LayoutAdminPanel.cshtml";
+}
+
+
+
+@using (Html.BeginForm("Guncelle", "AdminAKMmerkezleri", FormMethod.Post))
+{
+
+    <div class="form-group">
+
+        @Html.HiddenFor(x => x.ID, new { @class = "form-control" })
+
+        <div style="margin-top:15px">
+            @Html.LabelFor(x => x.IL, new { @class = "form-control" })
+            @Html.TextBoxFor(x => x.IL, new { @class = "form-control" })
+        </div><br />
+
+        <div style="margin-top:15px">
+            @Html.LabelFor(x => x.ISLETME, new { @class = "form-control" })
+            @Html.TextBoxFor(x => x.ISLETME, new { @class = "form-control" })
+        </div><br />
+
+        <div style="margin-top:15px">
+            @Html.LabelFor(x => x.TELEFON, new { @class = "form-control" })
+            @Html.TextBoxFor(x => x.TELEFON, new { @class = "form-control" })
+        </div><br />
+
+        <div style="margin-top:15px">
+            @Html.LabelFor(x => x.ADRES, new { @class = "form-control" })
+            @Html.TextAreaFor(x => x.ADRES, new { @class = "form-control" })
+        </div>
+
+        <br />
+        <button class="btn btn-success">Güncelle</button>
+    </div>
+
+}

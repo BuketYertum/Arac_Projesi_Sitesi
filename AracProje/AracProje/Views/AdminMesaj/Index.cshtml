@@ -1,0 +1,34 @@
+﻿
+@using AracProje.Models.Entity
+@model List<TBL_MESAJ>  
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/LayoutAdminPanel.cshtml";
+}
+
+
+
+
+    <table class="table table-bordered">
+        <tr>
+            <th>ID</th>
+            <th>AD SOYAD</th>
+            <th>İLETİŞİM BİLGİSİ</th>
+            <th>KONU</th>
+            <th>MESAJ</th>
+        </tr>
+
+        @foreach (var x in Model)
+        {
+            <tr>
+                <td>@x.ID</td>
+                <td>@x.ADSOYAD</td>
+                <td>@x.MAIL</td>
+                <td>@x.KONU</td>
+                <td>@x.MESAJ</td>
+            </tr>
+        }
+
+
+    </table>

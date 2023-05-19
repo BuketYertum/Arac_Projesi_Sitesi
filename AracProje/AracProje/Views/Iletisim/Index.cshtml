@@ -1,0 +1,108 @@
+﻿
+@model AracProje.Models.Entity.TBL_MESAJ
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/LayoutIletisim.cshtml";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<section class="text-center">
+
+    <div class="row">
+        <div>
+
+            <form>
+                <div class="row"> 
+                    
+                    @using(Html.BeginForm("Index", "Iletisim", FormMethod.Post)) {
+
+                        <div class="col-md-7">
+                            <div class="row mb-4">
+                                <div class="col-md-6 mb-4 mb-md-0">
+                                    <div class="form-outline">
+                                        @Html.TextBoxFor(x => x.ADSOYAD, new { @class = "form-control" })
+                                        @*<input type="text" id="form3Example1" class="form-control" />*@
+                                        <label class="form-label" for="form3Example1">Ad Soyad</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-outline">
+                                        @Html.TextBoxFor(x => x.MAIL, new { @class = "form-control" })
+                                        @*<input type="email" id="form3Example2" class="form-control" />*@
+                                        <label class="form-label" for="form3Example2">Mail Adresi / Telefon</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                @*<input type="text" id="form3Example3" class="form-control" />*@
+                                @Html.TextBoxFor(x => x.KONU, new { @class = "form-control" })
+                                <label class="form-label" for="form3Example3">Konu</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                @*<textarea class="form-control" id="form4Example3" rows="4"></textarea>*@
+                                @Html.TextAreaFor(x => x.MESAJ, new { @class = "form-control" })
+                                <label class="form-label" for="form4Example3">Mesaj</label>
+                            </div>
+
+                            <div class="text-center @*text-md-start*@">
+                                <button class="btn btn-primary">GÖNDER</button>
+                                @*<button type="submit" class="btn btn-primary mb-5 mb-md-0">
+                                    GÖNDER
+                                </button>*@
+                            </div>
+                        </div>
+
+                    }
+
+
+
+
+
+                        <div class="col-md-3">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                                    <p><small>Payas / HATAY, TÜRKİYE</small></p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone fa-2x text-primary"></i>
+                                    <p><small>0530 930 99 01</small></p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope fa-2x text-primary"></i>
+                                    <p><small>furkanyertum@mail.com</small></p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="https://www.instagram.com/furkanyertum/"><i class="fa-brands fa-instagram fa-2x text-primary"></i></a>
+                                    <p><small>Instagram </small></p>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/frknyrtm"> <i class="fa-brands fa-facebook fa-2x text-primary"></i></a>
+                                    <p><small>Facebook</small></p>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/furkanyertum"><i class="fa-brands fa-twitter fa-2x text-primary"></i></a>
+                                    <p><small>Twitter</small></p>
+                                </li>
+                            </ul>
+                        </div>
+
+
+</div>
+            </form>
+
+        </div>
+    </div>
+
+
+</section>
+

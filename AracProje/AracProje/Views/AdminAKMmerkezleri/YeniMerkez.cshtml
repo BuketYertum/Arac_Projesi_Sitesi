@@ -1,0 +1,40 @@
+﻿
+
+@model AracProje.Models.Entity.TBL_AKMMERKEZLERI
+
+@{
+    ViewBag.Title = "YeniMerkez";
+    Layout = "~/Views/Shared/LayoutAdminPanel.cshtml";
+}
+
+
+<form class="form-group" method="post">
+
+    <div style="margin-top:15px">
+        @Html.LabelFor(x => x.ID, new { @class = "form-control" })
+        @Html.HiddenFor(x => x.ID, new { @class = "form-control" })
+    </div>
+
+    <div style="margin-top:15px">
+        @Html.LabelFor(x => x.IL, new { @class = "form-control" })
+        @Html.TextBoxFor(x => x.IL, new { @class = "form-control" })
+    </div>
+
+    <div style="margin-top:15px">
+        @Html.LabelFor(x => x.ISLETME, new { @class = "form-control" })
+        @Html.TextBoxFor(x => x.ISLETME, new { @class = "form-control" })
+    </div>
+
+    <div style="margin-top:15px">
+        @Html.LabelFor(x => x.TELEFON, new { @class = "form-control" })
+        @Html.TextBoxFor(x => x.TELEFON, new { @class = "form-control" })
+    </div>
+
+    <div style="margin-top:15px">
+        @Html.LabelFor(x => x.ADRES, new { @class = "form-control" })
+        @Html.TextBoxFor(x => x.ADRES, new { @class = "form-control" })
+    </div>
+
+    <br />
+    <button class="btn btn-success">EKLE</button>
+</form>

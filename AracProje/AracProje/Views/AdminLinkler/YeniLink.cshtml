@@ -1,0 +1,31 @@
+﻿
+
+@using AracProje.Models.Entity
+@model AracProje.Models.Entity.TBL_LINKLER
+
+@{
+    ViewBag.Title = "YeniLink";
+    Layout = "~/Views/Shared/LayoutAdminPanel.cshtml";
+}
+
+
+<form class="form-group" method="post">
+
+    <div style="margin-top:15px">
+        @* @Html.LabelFor(x => x.ID, new { @class = "form-control" })*@
+        @Html.HiddenFor(x => x.ID, new { @class = "form-control" })
+    </div>
+
+    <div style="margin-top:15px">
+        @Html.LabelFor(x => x.BASLIK, new { @class = "form-control" })
+        @Html.TextBoxFor(x => x.BASLIK, new { @class = "form-control" })
+    </div>
+
+    <div style="margin-top:15px">
+        @Html.LabelFor(x => x.LINK, new { @class = "form-control" })
+        @Html.TextBoxFor(x => x.LINK, new { @class = "form-control" })
+    </div>
+
+    <br />
+    <button class="btn btn-success">EKLE</button>
+</form>

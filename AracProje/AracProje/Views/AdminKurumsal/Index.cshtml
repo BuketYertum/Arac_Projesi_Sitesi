@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/LayoutAdminPanel.cshtml";
+}
+
+
+
+<table class="table table-bordered">
+    <tr style="background-color:#808080; border-top-color:yellow; border-inline-color:yellow; border-color:yellow; color:black; font-size:larger">
+        <td>Banka Adı</td>
+        <td>Hesap Sahibi</td>
+        <td>İban</td>
+        <td>Hesap No</td>
+        <td>Şube Kodu</td>
+        <td>İŞLEM</td>
+    </tr>
+
+    @foreach (var x in Model)
+    {
+        <tr>
+            <th>@x.BANKAADI</th>
+            <th>@x.HESAPSAHIBI</th>
+            <th>@x.IBAN</th>
+            <th>@x.HESAPNO</th>
+            <th>@x.SUBEKODU</th>
+            <th>
+                <a href="/AdminKurumsal/Sil/@x.ID" class="btn btn-danger">SİL</a>
+            </th>
+        </tr>
+    }
+
+
+</table>
+<a href="/AdminKurumsal/YeniBanka" class="btn btn-primary">EKLE</a>

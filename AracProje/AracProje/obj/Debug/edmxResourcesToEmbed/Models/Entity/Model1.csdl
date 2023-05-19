@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DboAracProjeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TBL_ADMIN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KULLANICI" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SIFRE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_AKMMERKEZLERI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ISLETME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFON" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ADRES" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_BANKABILGI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BANKAADI" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="HESAPSAHIBI" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IBAN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="HESAPNO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SUBEKODU" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FOTO" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_LINKLER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BASLIK" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LINK" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_MESAJ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ADSOYAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MAIL" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="KONU" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="MESAJ" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_YONETMELIKLER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="YONETMELIKADI" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ACIKLAMA" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="FOTO" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="DboAracProjeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TBL_ADMIN" EntityType="Self.TBL_ADMIN" />
+    <EntitySet Name="TBL_AKMMERKEZLERI" EntityType="Self.TBL_AKMMERKEZLERI" />
+    <EntitySet Name="TBL_BANKABILGI" EntityType="Self.TBL_BANKABILGI" />
+    <EntitySet Name="TBL_LINKLER" EntityType="Self.TBL_LINKLER" />
+    <EntitySet Name="TBL_MESAJ" EntityType="Self.TBL_MESAJ" />
+    <EntitySet Name="TBL_YONETMELIKLER" EntityType="Self.TBL_YONETMELIKLER" />
+  </EntityContainer>
+</Schema>

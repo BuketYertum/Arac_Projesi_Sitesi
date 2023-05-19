@@ -1,0 +1,37 @@
+﻿
+
+@using AracProje.Models.Entity
+@model List<TBL_YONETMELIKLER>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/LayoutInfo.cshtml";
+}
+
+
+<table class="table table-bordered">
+    <tr style="background-color: #242222; border-top-color: yellow; border-inline-color: yellow; border-color: yellow; color: white; font-size: larger">
+        <td>Yönetmelik</td>
+    </tr>
+
+    @foreach (var x in Model)
+    {
+        <tr>
+            <th>@x.YONETMELIKADI</th>
+        </tr>
+    }
+</table>
+
+<table class="table table-bordered">
+    <tr style="background-color: #242222; border-top-color: yellow; border-inline-color: yellow; border-color: yellow; color: white; font-size: larger">
+        <td>Açıklama</td>
+    </tr>
+
+    @foreach (var x in Model)
+    {
+        <tr style="font-size:small; font-style:unset">
+            <th>@x.ACIKLAMA</th>
+        </tr>
+    }
+</table>
+

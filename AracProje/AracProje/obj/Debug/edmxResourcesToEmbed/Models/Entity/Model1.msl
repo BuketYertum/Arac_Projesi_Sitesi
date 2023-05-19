@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DboAracProjeModelStoreContainer" CdmEntityContainer="DboAracProjeEntities">
+    <EntitySetMapping Name="TBL_ADMIN">
+      <EntityTypeMapping TypeName="DboAracProjeModel.TBL_ADMIN">
+        <MappingFragment StoreEntitySet="TBL_ADMIN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KULLANICI" ColumnName="KULLANICI" />
+          <ScalarProperty Name="SIFRE" ColumnName="SIFRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_AKMMERKEZLERI">
+      <EntityTypeMapping TypeName="DboAracProjeModel.TBL_AKMMERKEZLERI">
+        <MappingFragment StoreEntitySet="TBL_AKMMERKEZLERI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IL" ColumnName="IL" />
+          <ScalarProperty Name="ISLETME" ColumnName="ISLETME" />
+          <ScalarProperty Name="TELEFON" ColumnName="TELEFON" />
+          <ScalarProperty Name="ADRES" ColumnName="ADRES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_BANKABILGI">
+      <EntityTypeMapping TypeName="DboAracProjeModel.TBL_BANKABILGI">
+        <MappingFragment StoreEntitySet="TBL_BANKABILGI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BANKAADI" ColumnName="BANKAADI" />
+          <ScalarProperty Name="HESAPSAHIBI" ColumnName="HESAPSAHIBI" />
+          <ScalarProperty Name="IBAN" ColumnName="IBAN" />
+          <ScalarProperty Name="HESAPNO" ColumnName="HESAPNO" />
+          <ScalarProperty Name="SUBEKODU" ColumnName="SUBEKODU" />
+          <ScalarProperty Name="FOTO" ColumnName="FOTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_LINKLER">
+      <EntityTypeMapping TypeName="DboAracProjeModel.TBL_LINKLER">
+        <MappingFragment StoreEntitySet="TBL_LINKLER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BASLIK" ColumnName="BASLIK" />
+          <ScalarProperty Name="LINK" ColumnName="LINK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_MESAJ">
+      <EntityTypeMapping TypeName="DboAracProjeModel.TBL_MESAJ">
+        <MappingFragment StoreEntitySet="TBL_MESAJ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ADSOYAD" ColumnName="ADSOYAD" />
+          <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+          <ScalarProperty Name="KONU" ColumnName="KONU" />
+          <ScalarProperty Name="MESAJ" ColumnName="MESAJ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_YONETMELIKLER">
+      <EntityTypeMapping TypeName="DboAracProjeModel.TBL_YONETMELIKLER">
+        <MappingFragment StoreEntitySet="TBL_YONETMELIKLER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="YONETMELIKADI" ColumnName="YONETMELIKADI" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="FOTO" ColumnName="FOTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

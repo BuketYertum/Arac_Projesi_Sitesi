@@ -1,0 +1,36 @@
+﻿
+@using AracProje.Models.Entity
+@model List<TBL_AKMMERKEZLERI>
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/LayoutInfo.cshtml";
+}
+
+
+<table class="table table-bordered">
+    <tr style="background-color:#242222; border-top-color:yellow; border-inline-color:yellow; border-color:yellow; color:white; font-size:larger">
+        <td>ID</td>
+        <td>İL</td>
+        <td>İŞLETME</td>
+        <td>Telefon</td>
+        <td>ADRES</td>
+    </tr>
+
+    @foreach (var x in Model)
+    {
+        <tr>
+            <th>@x.ID</th>
+            <th>@x.IL</th>
+            <th>@x.ISLETME</th>
+            <th>@x.TELEFON</th>
+            <th>@x.ADRES</th>
+        </tr>
+    }
+
+
+</table>
+
+
+

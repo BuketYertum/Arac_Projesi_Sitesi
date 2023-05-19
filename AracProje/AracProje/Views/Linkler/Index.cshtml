@@ -1,0 +1,30 @@
+﻿
+@using AracProje.Models.Entity
+@model List<TBL_LINKLER>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/LayoutInfo.cshtml";
+}
+
+<h2></h2>
+
+<table class="table table-bordered">
+    <tr style="background-color:#808080; border-top-color:yellow; border-inline-color:yellow; border-color:yellow; color:black; font-size:larger">
+        <td>ID</td>
+        <td>Başlık</td>
+        <td>Link</td>
+    </tr>
+
+    @foreach(var x in Model)
+            {
+                <tr>
+                    <th>@x.ID</th>
+                    <th>@x.BASLIK</th>
+                    <th>@x.LINK</th>
+                </tr>
+            }
+
+
+</table>
+

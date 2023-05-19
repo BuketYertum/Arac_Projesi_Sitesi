@@ -1,0 +1,43 @@
+﻿@model AracProje.Models.Entity.TBL_BANKABILGI
+
+@{
+    ViewBag.Title = "YeniBanka";
+    Layout = "~/Views/Shared/LayoutAdminPanel.cshtml";
+}
+
+
+<form class="form-group" method="post">
+
+    <div style="margin-top:15px">
+        @*  @Html.LabelFor(x => x.ID, new { @class = "form-control" })*@
+        @Html.HiddenFor(x => x.ID, new { @class = "form-control" })
+    </div>
+
+    <div style="margin-top:15px">
+        @Html.LabelFor(x => x.BANKAADI, new { @class = "form-control" })
+        @Html.TextBoxFor(x => x.BANKAADI, new { @class = "form-control" })
+    </div>
+
+    <div style="margin-top:15px">
+        @Html.LabelFor(x => x.HESAPSAHIBI, new { @class = "form-control" })
+        @Html.TextBoxFor(x => x.HESAPSAHIBI, new { @class = "form-control" })
+    </div>
+
+    <div style="margin-top:15px">
+        @Html.LabelFor(x => x.IBAN, new { @class = "form-control" })
+        @Html.TextBoxFor(x => x.IBAN, new { @class = "form-control" })
+    </div>
+
+    <div style="margin-top:15px">
+        @Html.LabelFor(x => x.HESAPNO, new { @class = "form-control" })
+        @Html.TextBoxFor(x => x.HESAPNO, new { @class = "form-control" })
+    </div>
+
+    <div style="margin-top:15px">
+        @Html.LabelFor(x => x.SUBEKODU, new { @class = "form-control" })
+        @Html.TextBoxFor(x => x.SUBEKODU, new { @class = "form-control" })
+    </div>
+
+    <br />
+    <button class="btn btn-success">EKLE</button>
+</form>

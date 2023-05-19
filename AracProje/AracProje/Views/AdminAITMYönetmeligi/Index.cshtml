@@ -1,0 +1,46 @@
+﻿
+@using AracProje.Models.Entity
+@model List<TBL_YONETMELIKLER>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/LayoutAdminPanel.cshtml";
+}
+
+
+<table class="table table-bordered">
+    <tr style="background-color:#808080; border-top-color:yellow; border-inline-color:yellow; border-color:yellow; color:black; font-size:larger">
+        <td>ID</td>
+        <td>Yönetmelik</td>
+    </tr>
+
+    @foreach (var x in Model)
+    {
+        <tr>
+            <th>@x.ID</th>
+            <th>@x.YONETMELIKADI</th>
+        </tr>
+    }
+</table>
+
+<table class="table table-bordered">
+    <tr style="background-color:#808080; border-top-color:yellow; border-inline-color:yellow; border-color:yellow; color:black; font-size:larger">
+        <td>Açıklama</td>
+        <td>İşlem</td>
+    </tr>
+
+    @foreach (var x in Model)
+    {
+        <tr style="font-size:small; font-style:unset">
+            <td>@x.ACIKLAMA</td>
+            
+            <td>
+                <a href="/AdminAITMYönetmeligi/Getir/@x.ID  " class="btn btn-warning">GÜNCELLE</a>
+                <br/><br/>
+                <a href="/AdminAITMYönetmeligi/Sil/@x.ID" class="btn btn-danger">SİL</a>
+            </td>
+        </tr>
+    }
+</table>
+
+
